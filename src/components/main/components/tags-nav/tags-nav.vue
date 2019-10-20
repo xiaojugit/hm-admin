@@ -94,8 +94,10 @@
             handleClose(item) {
                 console.log(item)
             },
+
             handleClick(item) {
                 console.log(item)
+                this.$emit('on-change', item.name);
                 this.visible = false;
             },
             contextMenu(item, event) {

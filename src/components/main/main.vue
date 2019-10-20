@@ -13,7 +13,7 @@
             <Content class="main-content-con">
                 <Layout class="main-layout-con">
                     <div class="tag-nav-wrapper">
-                        <tags-nav :list="tagNavList"></tags-nav>
+                        <tags-nav :list="tagNavList" @on-change="turnToPage"></tags-nav>
                     </div>
                     <Content class="content-wrapper">
                         <keep-alive>
